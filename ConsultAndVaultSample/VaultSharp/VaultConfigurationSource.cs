@@ -1,4 +1,4 @@
-﻿namespace ConsultAndVaultSample.VaultSharp;
+﻿namespace ConsulAndVaultSample.VaultSharp;
 
 public class VaultConfigurationSource(VaultConfiguration config, ILogger? logger) : IConfigurationSource
 {

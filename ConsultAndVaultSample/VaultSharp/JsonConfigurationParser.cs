@@ -2,7 +2,7 @@
 using System.Globalization;
 using System.Text.Json;
 
-namespace ConsultAndVaultSample.VaultSharp;
+namespace ConsulAndVaultSample.VaultSharp;
 public class JsonConfigurationParser
 {
     private readonly Dictionary<string, string?> _data = new(StringComparer.OrdinalIgnoreCase);

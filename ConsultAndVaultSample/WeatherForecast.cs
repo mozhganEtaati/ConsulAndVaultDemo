@@ -1,4 +1,4 @@
-namespace ConsultAndVaultSample
+namespace ConsulAndVaultSample
 {
     public class WeatherForecast
     {

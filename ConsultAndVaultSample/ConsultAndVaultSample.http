@@ -1,6 +1,6 @@
-@ConsultAndVaultSample_HostAddress = http://localhost:5256
+@ConsulAndVaultSample_HostAddress = http://localhost:5256
 
-GET {{ConsultAndVaultSample_HostAddress}}/weatherforecast/
+GET {{ConsulAndVaultSample_HostAddress}}/weatherforecast/
 Accept: application/json
 
 ###

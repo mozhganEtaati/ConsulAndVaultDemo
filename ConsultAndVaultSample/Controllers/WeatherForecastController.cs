@@ -1,7 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 
-namespace ConsultAndVaultSample.Controllers
+namespace ConsulAndVaultSample.Controllers
 {
     [ApiController]
     [Route("[controller]")]

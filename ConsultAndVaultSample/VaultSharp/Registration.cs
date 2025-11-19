@@ -1,4 +1,4 @@
-﻿namespace ConsultAndVaultSample.VaultSharp;
+﻿namespace ConsulAndVaultSample.VaultSharp;
 
 public static class Registration
 {

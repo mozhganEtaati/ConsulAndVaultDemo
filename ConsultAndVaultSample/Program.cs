@@ -1,11 +1,11 @@
-﻿using ConsultAndVaultSample;
-using ConsultAndVaultSample.VaultSharp;
+﻿using ConsulAndVaultSample;
+using ConsulAndVaultSample.VaultSharp;
 using Winton.Extensions.Configuration.Consul;
 
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Configuration.AddConsul(
-    "ConsultAndVaultSample/Development/appsettings.json", // KV key in Consul
+    "ConsulAndVaultSample/Development/appsettings.json", // KV key in Consul
     options =>
     {
         options.ConsulConfigurationOptions = cco =>

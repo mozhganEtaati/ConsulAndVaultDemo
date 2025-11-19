@@ -4,7 +4,7 @@ using VaultSharp;
 using VaultSharp.V1.AuthMethods.Token;
 using VaultSharp.V1.AuthMethods.UserPass;
 
-namespace ConsultAndVaultSample.VaultSharp;
+namespace ConsulAndVaultSample.VaultSharp;
 
 public class VaultConfigurationProvider : ConfigurationProvider, IDisposable
 {
