@@ -1,4 +1,5 @@
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.Extensions.Options;
 
 namespace ConsultAndVaultSample.Controllers
 {
@@ -12,15 +13,18 @@ namespace ConsultAndVaultSample.Controllers
         };
 
         private readonly ILogger<WeatherForecastController> _logger;
+        private readonly IOptionsMonitor<SampleSetting> _setting;
 
-        public WeatherForecastController(ILogger<WeatherForecastController> logger)
+        public WeatherForecastController(ILogger<WeatherForecastController> logger, IOptionsMonitor<SampleSetting> setting)
         {
             _logger = logger;
+            _setting = setting;
         }
 
         [HttpGet(Name = "GetWeatherForecast")]
         public IEnumerable<WeatherForecast> Get()
         {
+            var x = _setting.CurrentValue.AnotherValue.ToString(); // Use the setting from Consul KV
             return Enumerable.Range(1, 5).Select(index => new WeatherForecast
             {
                 Date = DateOnly.FromDateTime(DateTime.Now.AddDays(index)),
