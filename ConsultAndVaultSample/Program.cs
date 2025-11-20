@@ -1,4 +1,5 @@
 ﻿using ConsulAndVaultSample;
+using ConsulAndVaultSample.Configurations;
 using ConsulAndVaultSample.VaultSharp;
 using Winton.Extensions.Configuration.Consul;
 

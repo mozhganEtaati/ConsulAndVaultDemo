@@ -1,4 +1,5 @@
-﻿using System.Diagnostics;
+﻿using ConsulAndVaultSample.Configurations;
+using System.Diagnostics;
 using System.Text.Json;
 using VaultSharp;
 using VaultSharp.V1.AuthMethods.Token;

@@ -1,3 +1,4 @@
+using ConsulAndVaultSample.Configurations;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Options;
 

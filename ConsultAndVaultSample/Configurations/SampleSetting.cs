@@ -1,4 +1,4 @@
-﻿namespace ConsulAndVaultSample;
+﻿namespace ConsulAndVaultSample.Configurations;
 
 public class SampleSetting
 {
