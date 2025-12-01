@@ -2,14 +2,14 @@
 
 public static class ConsulFailover
 {
-    public static string SelectHealthyConsul(string[] addresses)
+    public static async Task<string> SelectHealthyConsul(string[] addresses)
     {
         foreach (var address in addresses)
         {
             try
             {
                 using var http = new HttpClient();
-                var result = http.GetAsync($"{address}/v1/status/leader").Result;
+                var result =await http.GetAsync($"{address}/v1/status/leader");
 
                 if (result.IsSuccessStatusCode)
                     return address;
